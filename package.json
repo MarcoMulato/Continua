@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "mocha": "^6.2.0"
+  },
+  "engines": {
+    "node": "10.15.3"
   }
 }
