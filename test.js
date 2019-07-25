@@ -1,6 +1,6 @@
 const assert = require('assert');
 const axios = require('axios');
-const URL = 'http://localhost:3000'
+const URL = 'https://integracion-continua-00.herokuapp.com'
 
 describe('/ GET Hello word', function() {
     it('Should return hello word ', function(done) {
