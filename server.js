@@ -1,7 +1,22 @@
 const express = require('express')
-
+const app = express();
+const bodyParser = require('body-parser')
 const port = 3000
 
-app.get('/', (req, res) => res.send('Hola mundo!'))
+app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({ extended: true })); 
 
-app.listen(port, () => console.log(`Server corriendo en el puerto:  ${port}!`))
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.post('/suma', (req, res) => {
+    const { num1, num2, num3 } = req.body
+    console.log('Respuesta:')
+    console.log(req.body)
+    if( (num1 + num2) == num3 ){
+        res.status(200).json({ message: 'Son iguales'})
+    }else{
+       res.status(500).json({ message: 'Son diferentes' })   
+    }
+})
+
+app.listen(port, () => console.log(`Listening on port ${port}!`))
