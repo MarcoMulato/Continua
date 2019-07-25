@@ -19,4 +19,6 @@ app.post('/suma', (req, res) => {
     }
 })
 
-app.listen(port, () => console.log(`Listening on port ${port}!`))
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
+});
