@@ -13,9 +13,9 @@ app.post('/suma', (req, res) => {
     console.log('Respuesta:')
     console.log(req.body)
     if( (num1 + num2) == num3 ){
-        res.status(200).json({ message: 'Son iguales'})
+        res.status(200).json({ message: 'Ok'})
     }else{
-       res.status(500).json({ message: 'Son diferentes' })   
+       res.status(500).json({ message: 'Nok' })   
     }
 })
 

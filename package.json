@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/AugustoRucle/simple-project-nodejs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "mocha": "^6.2.0"
