@@ -1,0 +1,25 @@
+{
+  "name": "simple-project-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustoRucle/simple-project-nodejs.git"
+  },
+  "author": "augustorucle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AugustoRucle/simple-project-nodejs/issues"
+  },
+  "homepage": "https://github.com/AugustoRucle/simple-project-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
